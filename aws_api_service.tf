@@ -386,8 +386,7 @@ module "pipeline_laravel" {
   // Deploy
   deploy_enabled          = true
   deploy_ecs_cluster_name = module.ecs_cluster_workload.aws_ecs_cluster_default.name
-  deploy_ecs_service_name = format("%s/%s", module.ecs_cluster_workload.aws_ecs_cluster_default.name, lower(local.laravel.name))
-  imagedefinitions_name   = null
+  deploy_ecs_service_name = lower(local.laravel.name)
 
   // Blue/Green Deploy 
   bluegreen_deploy_enabled   = false
