@@ -20,7 +20,7 @@ locals {
     domain = {
       zoneid  = "Z09199501MS1MJQMJ796B"
       name    = "joselin.sre.bizmates.co.jp"
-      acm_arn = "arn:aws:acm:ap-southeast-1:890942158228:certificate/47805cae-14f6-4091-a434-23d828fd5c22"
+      acm_arn = "arn:aws:acm:ap-northeast-1:890942158228:certificate/974445f0-da15-40a7-8225-3232914ad461"
     }
   }
 }

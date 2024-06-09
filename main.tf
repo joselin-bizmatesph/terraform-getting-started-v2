@@ -15,7 +15,7 @@ terraform {
 # -------------------------------------
 provider "aws" {
   profile = "playground_mfa"
-  region  = "ap-southeast-1"
+  region  = "ap-northeast-1"
 
   default_tags {
     tags = local.service_account.default_tags

@@ -2,7 +2,7 @@ module "vpc_workload" {
   source = "git@github.com:bizmatesinc/terraform-template-module.git//aws_modules/module_vpc?ref=v2.0.17"
 
   // Network
-  availability_zones = ["ap-southeast-1b", "ap-southeast-1c"]
+  availability_zones = ["ap-northeast-1a", "ap-northeast-1c"]
   cidr_block         = local.workload.vpc.cidr_block
   project_name       = lower(local.env_project_name)
   enable_termination = var.ENABLE_TERMINATION
